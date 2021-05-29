@@ -1,0 +1,21 @@
+#include "Macierz3x3.hh"
+
+
+/*
+ *  Tutaj nalezy zdefiniowac odpowiednie metody
+ *  klasy Macierz3x3, ktore zawieraja wiecej kodu
+ *  niz dwie linijki.
+ *  Mniejsze metody mozna definiwac w ciele klasy.
+ */
+
+
+std::ostream& operator << (std::ostream &Strm, const Macierz3x3 &Mac)
+{
+  for( int i=0 ; i<3 ; i++){
+    for( int j=0 ; j<3 ; j++){
+      Strm<<Mac(i,j);
+    }
+    Strm<<endl;
+  }
+  return Strm;  
+}

@@ -1,0 +1,4 @@
+<map id="Dron" name="Dron">
+<area shape="rect" id="node2" href="$class_obj___sc.html" title="Klasa ta jest dziedziczona do drona oraz przeszkody. Jego metodą jest wykrywanie kolizji. " alt="" coords="5,5,71,32"/>
+<area shape="rect" id="node3" href="$class_wektor.html" title="Wektor\&lt; 3 \&gt;" alt="" coords="95,5,189,32"/>
+</map>

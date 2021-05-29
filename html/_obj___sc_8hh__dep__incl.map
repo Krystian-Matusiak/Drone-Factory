@@ -1,0 +1,10 @@
+<map id="inc/Obj_Sc.hh" name="inc/Obj_Sc.hh">
+<area shape="rect" id="node2" href="$_dron_8hh.html" title="inc/Dron.hh" alt="" coords="71,80,160,107"/>
+<area shape="rect" id="node7" href="$_obstacle_8hh.html" title="inc/Obstacle.hh" alt="" coords="184,80,297,107"/>
+<area shape="rect" id="node9" href="$_obj___sc_8cpp.html" title="src/Obj_Sc.cpp" alt="" coords="322,80,434,107"/>
+<area shape="rect" id="node3" href="$_scena_8hh.html" title="inc/Scena.hh" alt="" coords="127,155,226,181"/>
+<area shape="rect" id="node6" href="$_dron_8cpp.html" title="src/Dron.cpp" alt="" coords="5,155,103,181"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="65,229,163,256"/>
+<area shape="rect" id="node5" href="$_scena_8cpp.html" title="src/Scena.cpp" alt="" coords="187,229,294,256"/>
+<area shape="rect" id="node8" href="$_obstacle_8cpp.html" title="src/Obstacle.cpp" alt="" coords="251,155,372,181"/>
+</map>

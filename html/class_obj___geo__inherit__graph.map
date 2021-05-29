@@ -1,0 +1,5 @@
+<map id="Obj_Geo" name="Obj_Geo">
+<area shape="rect" id="node2" href="$class_prostopadloscian.html" title="Klasa ta reprezentuje prostopadłościan oraz to co go określa (współrzędne, metody obrotu..." alt="" coords="5,80,128,107"/>
+<area shape="rect" id="node4" href="$class_rotor.html" title="Klasa określa współrzędne rotorów oraz jak się obracają " alt="" coords="153,80,207,107"/>
+<area shape="rect" id="node3" href="$class_obstacle.html" title="Klasa określa przeszkode. Jest fragmentem objektu sceny. " alt="" coords="29,155,104,181"/>
+</map>

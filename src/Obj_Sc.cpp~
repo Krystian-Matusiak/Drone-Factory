@@ -1,0 +1,15 @@
+#include "Obj_Sc.hh"
+using namespace std;
+/*
+bool Obj_Sc::IsColision( Obj_Sc &OS, double &d){
+  Wektor3D V=OS.Speed-this->Speed;
+  Wektor3D r=OS.Point()-this->Point();
+  d = sqrt(
+	   r.DlWek()*r.DlWek()
+	   +
+	   ( V & V )
+	 );
+
+  return d< OS.Radius() + this->Radius();
+}
+*/    

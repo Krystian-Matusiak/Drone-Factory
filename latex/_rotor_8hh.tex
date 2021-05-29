@@ -1,0 +1,134 @@
+\hypertarget{_rotor_8hh}{}\section{inc/\+Rotor.hh File Reference}
+\label{_rotor_8hh}\index{inc/\+Rotor.\+hh@{inc/\+Rotor.\+hh}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}Wektor3\+D.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Macierz3x3.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Obj\+\_\+\+Geo.\+hh\char`\"{}}\newline
+Include dependency graph for Rotor.\+hh\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_rotor_8hh__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_rotor_8hh__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_rotor}{Rotor}
+\begin{DoxyCompactList}\small\item\em Klasa określa współrzędne rotorów oraz jak się obracają \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{_rotor_8hh_a6e6ce3bcc6ad0cb16d457ac8d73b3a7e}{operator$<$$<$} (std\+::ostream \&Strm, const \hyperlink{class_rotor}{Rotor} \&Pr)
+\item 
+\hyperlink{class_rotor}{Rotor} \hyperlink{_rotor_8hh_a66cbe78735e95530c8eb1361b6fe40eb}{operator$\ast$} (\hyperlink{_macierz3x3_8hh_ad4fc7b0e263d9a99ba6174f68b52ea87}{Macierz3x3} M, \hyperlink{class_rotor}{Rotor} P)
+\item 
+\hyperlink{class_rotor}{Rotor} \hyperlink{_rotor_8hh_a8e627d5e28005e4dc3a7ab7ae6e21f9b}{operator+} (\hyperlink{class_rotor}{Rotor} P1, \hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D} W2)
+\item 
+\hyperlink{class_rotor}{Rotor} \hyperlink{_rotor_8hh_aec4621815bb6b2569f3c34689e7533a8}{operator+} (\hyperlink{class_rotor}{Rotor} P1, \hyperlink{class_rotor}{Rotor} P2)
+\item 
+std\+::istream \& \hyperlink{_rotor_8hh_a2e505b0dd49c9d2cb7fb02a9ea8ad231}{operator$>$$>$} (std\+::istream \&Strm, \hyperlink{class_rotor}{Rotor} \&Pr)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_rotor_8hh_a66cbe78735e95530c8eb1361b6fe40eb}\label{_rotor_8hh_a66cbe78735e95530c8eb1361b6fe40eb}} 
+\index{Rotor.\+hh@{Rotor.\+hh}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Rotor.\+hh@{Rotor.\+hh}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \hyperlink{class_rotor}{Rotor} operator$\ast$ (\begin{DoxyParamCaption}\item[{\hyperlink{_macierz3x3_8hh_ad4fc7b0e263d9a99ba6174f68b52ea87}{Macierz3x3}}]{M,  }\item[{\hyperlink{class_rotor}{Rotor}}]{P }\end{DoxyParamCaption})}
+
+
+
+Definition at line 38 of file Rotor.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{_rotor_8hh_a66cbe78735e95530c8eb1361b6fe40eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_rotor_8hh_a8e627d5e28005e4dc3a7ab7ae6e21f9b}\label{_rotor_8hh_a8e627d5e28005e4dc3a7ab7ae6e21f9b}} 
+\index{Rotor.\+hh@{Rotor.\+hh}!operator+@{operator+}}
+\index{operator+@{operator+}!Rotor.\+hh@{Rotor.\+hh}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{class_rotor}{Rotor} operator+ (\begin{DoxyParamCaption}\item[{\hyperlink{class_rotor}{Rotor}}]{P1,  }\item[{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}}]{W2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 47 of file Rotor.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{_rotor_8hh_a8e627d5e28005e4dc3a7ab7ae6e21f9b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_rotor_8hh_aec4621815bb6b2569f3c34689e7533a8}\label{_rotor_8hh_aec4621815bb6b2569f3c34689e7533a8}} 
+\index{Rotor.\+hh@{Rotor.\+hh}!operator+@{operator+}}
+\index{operator+@{operator+}!Rotor.\+hh@{Rotor.\+hh}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{class_rotor}{Rotor} operator+ (\begin{DoxyParamCaption}\item[{\hyperlink{class_rotor}{Rotor}}]{P1,  }\item[{\hyperlink{class_rotor}{Rotor}}]{P2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 57 of file Rotor.\+cpp.
+
+\mbox{\Hypertarget{_rotor_8hh_a6e6ce3bcc6ad0cb16d457ac8d73b3a7e}\label{_rotor_8hh_a6e6ce3bcc6ad0cb16d457ac8d73b3a7e}} 
+\index{Rotor.\+hh@{Rotor.\+hh}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Rotor.\+hh@{Rotor.\+hh}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{Strm,  }\item[{const \hyperlink{class_rotor}{Rotor} \&}]{Pr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 26 of file Rotor.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{_rotor_8hh_a6e6ce3bcc6ad0cb16d457ac8d73b3a7e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_rotor_8hh_a2e505b0dd49c9d2cb7fb02a9ea8ad231}\label{_rotor_8hh_a2e505b0dd49c9d2cb7fb02a9ea8ad231}} 
+\index{Rotor.\+hh@{Rotor.\+hh}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Rotor.\+hh@{Rotor.\+hh}}
+\subsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{Strm,  }\item[{\hyperlink{class_rotor}{Rotor} \&}]{Pr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 65 of file Rotor.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{_rotor_8hh_a2e505b0dd49c9d2cb7fb02a9ea8ad231_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{_rotor_8hh_a2e505b0dd49c9d2cb7fb02a9ea8ad231_icgraph}
+\end{center}
+\end{figure}

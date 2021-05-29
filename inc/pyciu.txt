@@ -1,0 +1,178 @@
+#ifndef WEKTOR_HH
+#define WEKTOR_HH
+
+#include <iostream>
+#include <math.h>
+
+/*! \brief Klasa ta reprezentuje wektor (tablica n-wymiarowa,
+    przeciążenia operatorów itp).  */
+template <int Wymiar>
+class Wektor {
+  double Vec[Wymiar];
+  static unsigned int counter;
+  static unsigned int sum;
+
+
+public:
+  // Wektor();
+  //~Wektor();
+  Wektor(){
+    //std::cout<<counter<<"  a suma  "<<sum<<std::endl;
+    ++counter;++sum;
+  };
+  ~Wektor(){--counter;};
+  Wektor(const Wektor &obj){
+    ++counter;
+    for(int i=0 ; i<Wymiar ; ++i) Vec[i]=obj[i];
+  }
+    static unsigned int ShowCounter();
+    static unsigned int ShowSum();
+
+  /*! DlWek()-oblicza długości wektora  */
+  double DlWek();
+  double operator [](int ind) const {return Vec[ind];};
+  double & operator [](int ind) {return Vec[ind];};
+};
+
+template <int Wymiar>
+unsigned int Wektor<Wymiar>::counter=0;
+
+template <int Wymiar>
+unsigned int Wektor<Wymiar>::sum=0;
+
+
+template <int Wymiar>
+unsigned int Wektor<Wymiar>::ShowCounter(){
+  return Wektor<Wymiar>::counter;
+}
+
+template <int Wymiar>
+unsigned int Wektor<Wymiar>::ShowSum(){
+  return Wektor<Wymiar>::sum;
+}
+
+template <int Wymiar>
+double Wektor<Wymiar>::DlWek(){
+  double dl=0;
+  for( int i=0 ; i<Wymiar; i++ )
+    dl=dl+this->Vec[i]*this->Vec[i];
+  dl=sqrt(dl);
+  return dl;
+}
+#endif
+
+
+/////////////////////////////////////////////////////
+
+
+#ifndef WEKTOR3D_HH
+#define WEKTOR3D_HH
+
+
+#include "Wektor.hh"
+#include "Macierz3x3.hh"
+
+typedef Wektor<3> Wektor3D;
+
+Wektor3D operator *(Macierz3x3 M , Wektor3D V);
+
+Wektor3D operator *(Wektor3D V1, Wektor3D V2);
+
+double operator &(Wektor3D V1, Wektor3D V2);
+
+Wektor3D operator *(double value, Wektor3D V);
+
+Wektor3D operator +(Wektor3D W1, Wektor3D W2);
+
+Wektor3D operator -(Wektor3D W1, Wektor3D W2);
+
+std::istream& operator >> (std::istream &Strm, Wektor3D &Wek);
+
+std::ostream& operator << (std::ostream &Strm, const Wektor3D &Wek);
+
+#endif
+
+
+
+///////////////////////////////////////////////////
+
+
+#include "Wektor3D.hh"
+#include "Macierz3x3.hh"
+
+
+
+
+Wektor3D operator*(Macierz3x3 M , Wektor3D V){
+  Wektor3D V2;
+  for( int i=0 ; i<3 ; i++)
+    V2[i]=0;
+  
+  for( int a=0 ; a<3 ; a++)
+    for( int c=0 ; c<3 ; c++)
+      V2[a] += M(a,c) * V[c];
+    
+  return V2;
+}
+
+Wektor3D operator *(Wektor3D V1, Wektor3D V2){
+  
+
+
+}
+
+double operator &(Wektor3D V1, Wektor3D V2){
+  double v=0;
+  for( int i=0 ; i<3 ; i++)
+    V1[i]*=V2[i];
+  for( int i=0 ; i<3 ; i++)
+    v+=V1[i];
+  return v;
+}
+
+
+Wektor3D operator *(double value, Wektor3D V){
+  Wektor3D V2;
+  
+  for( int a=0 ; a<3 ; a++)
+      V2[a] = value * V[a];
+    
+  return V2;
+}
+
+Wektor3D operator +(Wektor3D W1, Wektor3D W2){
+  Wektor3D V;
+
+  for( int i=0 ; i<3 ; i++){
+    V[i]=W1[i]+W2[i];
+  }
+ 
+  return V;
+}
+
+Wektor3D operator -(Wektor3D W1, Wektor3D W2){
+  Wektor3D V;
+
+  for( int i=0 ; i<3 ; i++){
+    V[i]=W1[i]-W2[i];
+  }
+ 
+  return V;
+}
+
+std::istream& operator >> (std::istream &Strm, Wektor3D &Wek)
+{
+  for( int i=0 ; i<3 ; i++){
+    Strm>>Wek[i];
+  }
+  return Strm;
+}
+
+std::ostream& operator << (std::ostream &Strm, const Wektor3D &Wek)
+{
+  for( int i=0 ; i<3 ; i++){
+    Strm<<Wek[i]<<" ";
+  }
+  
+  return Strm;  
+}

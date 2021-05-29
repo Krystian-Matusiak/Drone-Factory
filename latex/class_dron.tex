@@ -1,0 +1,212 @@
+\hypertarget{class_dron}{}\section{Dron Class Reference}
+\label{class_dron}\index{Dron@{Dron}}
+
+
+Klasa określa współrzędne rotorów oraz korpusu. Jest fragmentem objektu sceny.  
+
+
+
+
+{\ttfamily \#include $<$Dron.\+hh$>$}
+
+
+
+Inheritance diagram for Dron\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=129pt]{class_dron__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Dron\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_dron__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_dron_a3d1518d64638aaa98519d240b6455c8c}{Radius} ()
+\item 
+\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D} \hyperlink{class_dron_ae217b4b77f300658ade9817dbc3d0ffa}{Point} ()
+\item 
+void \hyperlink{class_dron_ae59a8da00fb889c8f97ae08b21a184f9}{Rotate} (int kat)
+\item 
+void \hyperlink{class_dron_ac9b37f92a345cce27dbc7c16cd40ce27}{Translate} (\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D} V)
+\item 
+\hyperlink{class_prostopadloscian}{Prostopadloscian} \& \hyperlink{class_dron_ad7c1cbee3550365921052076d7345e5f}{DownD} (int ind)
+\item 
+\hyperlink{class_prostopadloscian}{Prostopadloscian} \& \hyperlink{class_dron_ad6273a0942af9e85cf4fa039b36a1f05}{Corpus1} ()
+\item 
+\hyperlink{class_prostopadloscian}{Prostopadloscian} \hyperlink{class_dron_accc0e928bc7c9c66c779793fd41a81ee}{Corpus} ()
+\item 
+\hyperlink{class_rotor}{Rotor} \& \hyperlink{class_dron_a7e22e894b00020b62884cfce45850336}{Take} (int ind)
+\item 
+\hyperlink{class_rotor}{Rotor} \hyperlink{class_dron_a7ba22c83868cd96769061597d1d0ad25}{operator()} (int ind) const
+\item 
+\hyperlink{class_rotor}{Rotor} \& \hyperlink{class_dron_a0eb520dc02cf3b2df93d5ce5cf240dbc}{operator()} (int ind)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D} \hyperlink{class_dron_af79b620c5f561d94e0e53b8f79bc66c7}{Speed}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa określa współrzędne rotorów oraz korpusu. Jest fragmentem objektu sceny. 
+
+Definition at line 13 of file Dron.\+hh.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dron_accc0e928bc7c9c66c779793fd41a81ee}\label{class_dron_accc0e928bc7c9c66c779793fd41a81ee}} 
+\index{Dron@{Dron}!Corpus@{Corpus}}
+\index{Corpus@{Corpus}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{Corpus()}{Corpus()}}
+{\footnotesize\ttfamily \hyperlink{class_prostopadloscian}{Prostopadloscian} Dron\+::\+Corpus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 23 of file Dron.\+cpp.
+
+\mbox{\Hypertarget{class_dron_ad6273a0942af9e85cf4fa039b36a1f05}\label{class_dron_ad6273a0942af9e85cf4fa039b36a1f05}} 
+\index{Dron@{Dron}!Corpus1@{Corpus1}}
+\index{Corpus1@{Corpus1}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{Corpus1()}{Corpus1()}}
+{\footnotesize\ttfamily \hyperlink{class_prostopadloscian}{Prostopadloscian} \& Dron\+::\+Corpus1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 15 of file Dron.\+cpp.
+
+\mbox{\Hypertarget{class_dron_ad7c1cbee3550365921052076d7345e5f}\label{class_dron_ad7c1cbee3550365921052076d7345e5f}} 
+\index{Dron@{Dron}!DownD@{DownD}}
+\index{DownD@{DownD}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{Down\+D()}{DownD()}}
+{\footnotesize\ttfamily \hyperlink{class_prostopadloscian}{Prostopadloscian} \& Dron\+::\+DownD (\begin{DoxyParamCaption}\item[{int}]{ind }\end{DoxyParamCaption})}
+
+
+
+Definition at line 19 of file Dron.\+cpp.
+
+\mbox{\Hypertarget{class_dron_a7ba22c83868cd96769061597d1d0ad25}\label{class_dron_a7ba22c83868cd96769061597d1d0ad25}} 
+\index{Dron@{Dron}!operator()@{operator()}}
+\index{operator()@{operator()}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{class_rotor}{Rotor} Dron\+::operator() (\begin{DoxyParamCaption}\item[{int}]{ind }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 36 of file Dron.\+hh.
+
+\mbox{\Hypertarget{class_dron_a0eb520dc02cf3b2df93d5ce5cf240dbc}\label{class_dron_a0eb520dc02cf3b2df93d5ce5cf240dbc}} 
+\index{Dron@{Dron}!operator()@{operator()}}
+\index{operator()@{operator()}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{class_rotor}{Rotor}\& Dron\+::operator() (\begin{DoxyParamCaption}\item[{int}]{ind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 37 of file Dron.\+hh.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{class_dron_a0eb520dc02cf3b2df93d5ce5cf240dbc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dron_ae217b4b77f300658ade9817dbc3d0ffa}\label{class_dron_ae217b4b77f300658ade9817dbc3d0ffa}} 
+\index{Dron@{Dron}!Point@{Point}}
+\index{Point@{Point}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{Point()}{Point()}}
+{\footnotesize\ttfamily \hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D} Dron\+::\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 10 of file Dron.\+cpp.
+
+\mbox{\Hypertarget{class_dron_a3d1518d64638aaa98519d240b6455c8c}\label{class_dron_a3d1518d64638aaa98519d240b6455c8c}} 
+\index{Dron@{Dron}!Radius@{Radius}}
+\index{Radius@{Radius}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{Radius()}{Radius()}}
+{\footnotesize\ttfamily double Dron\+::\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4 of file Dron.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{class_dron_a3d1518d64638aaa98519d240b6455c8c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dron_ae59a8da00fb889c8f97ae08b21a184f9}\label{class_dron_ae59a8da00fb889c8f97ae08b21a184f9}} 
+\index{Dron@{Dron}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{Rotate()}{Rotate()}}
+{\footnotesize\ttfamily void Dron\+::\+Rotate (\begin{DoxyParamCaption}\item[{int}]{kat }\end{DoxyParamCaption})}
+
+
+
+Definition at line 27 of file Dron.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{class_dron_ae59a8da00fb889c8f97ae08b21a184f9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dron_a7e22e894b00020b62884cfce45850336}\label{class_dron_a7e22e894b00020b62884cfce45850336}} 
+\index{Dron@{Dron}!Take@{Take}}
+\index{Take@{Take}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{Take()}{Take()}}
+{\footnotesize\ttfamily \hyperlink{class_rotor}{Rotor}\& Dron\+::\+Take (\begin{DoxyParamCaption}\item[{int}]{ind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 33 of file Dron.\+hh.
+
+\mbox{\Hypertarget{class_dron_ac9b37f92a345cce27dbc7c16cd40ce27}\label{class_dron_ac9b37f92a345cce27dbc7c16cd40ce27}} 
+\index{Dron@{Dron}!Translate@{Translate}}
+\index{Translate@{Translate}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{Translate()}{Translate()}}
+{\footnotesize\ttfamily void Dron\+::\+Translate (\begin{DoxyParamCaption}\item[{\hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D}}]{V }\end{DoxyParamCaption})}
+
+
+
+Definition at line 56 of file Dron.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_dron_af79b620c5f561d94e0e53b8f79bc66c7}\label{class_dron_af79b620c5f561d94e0e53b8f79bc66c7}} 
+\index{Dron@{Dron}!Speed@{Speed}}
+\index{Speed@{Speed}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{Speed}{Speed}}
+{\footnotesize\ttfamily \hyperlink{_wektor3_d_8hh_ac353a272b38b4ad342f7181ad7bdb91a}{Wektor3D} Dron\+::\+Speed}
+
+
+
+Definition at line 24 of file Dron.\+hh.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_dron_8hh}{Dron.\+hh}\item 
+src/\hyperlink{_dron_8cpp}{Dron.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="Obstacle" name="Obstacle">
+<area shape="rect" id="node2" href="$class_obj___sc.html" title="Klasa ta jest dziedziczona do drona oraz przeszkody. Jego metodą jest wykrywanie kolizji. " alt="" coords="5,80,71,107"/>
+<area shape="rect" id="node3" href="$class_prostopadloscian.html" title="Klasa ta reprezentuje prostopadłościan oraz to co go określa (współrzędne, metody obrotu..." alt="" coords="95,80,218,107"/>
+<area shape="rect" id="node4" href="$class_obj___geo.html" title="Obj_Geo" alt="" coords="120,5,193,32"/>
+</map>

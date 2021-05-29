@@ -1,0 +1,269 @@
+\hypertarget{main_8cpp}{}\section{src/main.cpp File Reference}
+\label{main_8cpp}\index{src/main.\+cpp@{src/main.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Scena.\+hh\char`\"{}}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8cpp_a990d305723905580686036c1f971b881}{Przyklad\+Zapisu\+Wspolrzednych\+Do\+Strumienia} (ostream \&Strm\+Wy, \hyperlink{class_prostopadloscian}{Prostopadloscian} \&Pr)
+\begin{DoxyCompactList}\small\item\em Struktura pomocnicza. Przechowuje dane dotyczące osi wokół której wykonujemy rotację oraz kąt. \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a6483b771554ce5d0a5da9bd51ed3948d}{Przyklad\+Zapisu\+Wspolrzednych\+Do\+Strumienia} (ostream \&Strm\+Wy, \hyperlink{class_rotor}{Rotor} \&R)
+\item 
+bool \hyperlink{main_8cpp_ad625435417a5af6af0560c9f5487ba78}{Przyklad\+Zapisu\+Wspolrzednych\+Do\+Pliku} (const char $\ast$s\+Nazwa\+Pliku, \hyperlink{class_prostopadloscian}{Prostopadloscian} \&Pr)
+\item 
+bool \hyperlink{main_8cpp_aa32e96669548ed076ad1957a25e5479d}{Przyklad\+Zapisu\+Wspolrzednych\+Do\+Pliku} (const char $\ast$s\+Nazwa\+Pliku, \hyperlink{class_rotor}{Rotor} \&R)
+\item 
+void \hyperlink{main_8cpp_a0f857701aee11003ec83e8f78ce70042}{Przyklad\+Zapisu\+Wspolrzednych\+Ze\+Strumienia} (istream \&Strm\+We, \hyperlink{class_prostopadloscian}{Prostopadloscian} \&Pr)
+\item 
+void \hyperlink{main_8cpp_aa0d8fb117515f2705eabef48acc4c192}{Przyklad\+Zapisu\+Wspolrzednych\+Ze\+Strumienia} (istream \&Strm\+We, \hyperlink{class_rotor}{Rotor} \&R)
+\item 
+bool \hyperlink{main_8cpp_ae081463cef84ed1c8249dd0856a617da}{Przyklad\+Zapisu\+Wspolrzednychz\+Pliku} (const char $\ast$s\+Nazwa\+Pliku, \hyperlink{class_prostopadloscian}{Prostopadloscian} \&Pr)
+\item 
+bool \hyperlink{main_8cpp_a1abe78e04f1c060f682b5c8a65f9c880}{Przyklad\+Zapisu\+Wspolrzednychz\+Pliku} (const char $\ast$s\+Nazwa\+Pliku, \hyperlink{class_rotor}{Rotor} \&R)
+\item 
+void \hyperlink{main_8cpp_afdf1ca9e7afc3e7ec41b47fea4b3d80d}{Menu} ()
+\item 
+void \hyperlink{main_8cpp_a2a0e843767aeea4f433a28b9c54f573a}{menu} ()
+\item 
+int \hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Dron\+Angle -\/ kąt wznoszenia drona Dron\+Shift -\/ długość trasy lotu drona vxyz oraz l\+\_\+vxyz -\/ wektor przesuwający drona oraz długość tego wektora param\+\_\+t -\/ parametr określający stosunek długości wektora w płaszczyźnie XY do długości drona. Parametr ten potrzebny jest do wyznaczenia kierunku ruchu drona. Rot\+Angle -\/ kat rotacji drona
+
+if (!\+Przyklad\+Zapisu\+Wspolrzednychz\+Pliku(\char`\"{}\+Dron1/\+Korpus.\+dat\char`\"{},D\+D\+D-\/$>$Corpus1())) return 1; 
+
+Definition at line 171 of file main.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_afdf1ca9e7afc3e7ec41b47fea4b3d80d}\label{main_8cpp_afdf1ca9e7afc3e7ec41b47fea4b3d80d}} 
+\index{main.\+cpp@{main.\+cpp}!Menu@{Menu}}
+\index{Menu@{Menu}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily void Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 145 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a2a0e843767aeea4f433a28b9c54f573a}\label{main_8cpp_a2a0e843767aeea4f433a28b9c54f573a}} 
+\index{main.\+cpp@{main.\+cpp}!menu@{menu}}
+\index{menu@{menu}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily void menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 158 of file main.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{main_8cpp_a2a0e843767aeea4f433a28b9c54f573a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_ad625435417a5af6af0560c9f5487ba78}\label{main_8cpp_ad625435417a5af6af0560c9f5487ba78}} 
+\index{main.\+cpp@{main.\+cpp}!Przyklad\+Zapisu\+Wspolrzednych\+Do\+Pliku@{Przyklad\+Zapisu\+Wspolrzednych\+Do\+Pliku}}
+\index{Przyklad\+Zapisu\+Wspolrzednych\+Do\+Pliku@{Przyklad\+Zapisu\+Wspolrzednych\+Do\+Pliku}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Przyklad\+Zapisu\+Wspolrzednych\+Do\+Pliku()}{PrzykladZapisuWspolrzednychDoPliku()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Przyklad\+Zapisu\+Wspolrzednych\+Do\+Pliku (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s\+Nazwa\+Pliku,  }\item[{\hyperlink{class_prostopadloscian}{Prostopadloscian} \&}]{Pr }\end{DoxyParamCaption})}
+
+Przyklad zapisu wspolrzednych zbioru punktow do pliku, z ktorego dane odczyta program gnuplot i narysuje je w swoim oknie graficznym. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s\+Nazwa\+Pliku} & -\/ nazwa pliku, do którego zostana zapisane wspolrzędne punktów. \\
+\hline
+\mbox{\tt in}  & {\em Pr} & -\/ klasa prostopadłościan. Z niej pobieramy kolejne współrzędne. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & -\/ gdy operacja zapisu powiodła się, \\
+\hline
+{\em false} & -\/ w przypadku przeciwnym. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 52 of file main.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_ad625435417a5af6af0560c9f5487ba78_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{main_8cpp_ad625435417a5af6af0560c9f5487ba78_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_aa32e96669548ed076ad1957a25e5479d}\label{main_8cpp_aa32e96669548ed076ad1957a25e5479d}} 
+\index{main.\+cpp@{main.\+cpp}!Przyklad\+Zapisu\+Wspolrzednych\+Do\+Pliku@{Przyklad\+Zapisu\+Wspolrzednych\+Do\+Pliku}}
+\index{Przyklad\+Zapisu\+Wspolrzednych\+Do\+Pliku@{Przyklad\+Zapisu\+Wspolrzednych\+Do\+Pliku}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Przyklad\+Zapisu\+Wspolrzednych\+Do\+Pliku()}{PrzykladZapisuWspolrzednychDoPliku()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Przyklad\+Zapisu\+Wspolrzednych\+Do\+Pliku (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s\+Nazwa\+Pliku,  }\item[{\hyperlink{class_rotor}{Rotor} \&}]{R }\end{DoxyParamCaption})}
+
+
+
+Definition at line 71 of file main.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_aa32e96669548ed076ad1957a25e5479d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_a990d305723905580686036c1f971b881}\label{main_8cpp_a990d305723905580686036c1f971b881}} 
+\index{main.\+cpp@{main.\+cpp}!Przyklad\+Zapisu\+Wspolrzednych\+Do\+Strumienia@{Przyklad\+Zapisu\+Wspolrzednych\+Do\+Strumienia}}
+\index{Przyklad\+Zapisu\+Wspolrzednych\+Do\+Strumienia@{Przyklad\+Zapisu\+Wspolrzednych\+Do\+Strumienia}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Przyklad\+Zapisu\+Wspolrzednych\+Do\+Strumienia()}{PrzykladZapisuWspolrzednychDoStrumienia()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Przyklad\+Zapisu\+Wspolrzednych\+Do\+Strumienia (\begin{DoxyParamCaption}\item[{ostream \&}]{Strm\+Wy,  }\item[{\hyperlink{class_prostopadloscian}{Prostopadloscian} \&}]{Pr }\end{DoxyParamCaption})}
+
+
+
+Struktura pomocnicza. Przechowuje dane dotyczące osi wokół której wykonujemy rotację oraz kąt. 
+
+Przyklad zapisu wspolrzednych zbioru punktow do strumienia wyjściowego. Dane sa odpowiednio sformatowane, tzn. przyjęto notację stałoprzecinkową z dokładnością do 10 miejsca po przecinku. Szerokość wyświetlanego pola to 16 miejsc, sposób wyrównywania -\/ do prawej strony. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Strm\+Wy} & -\/ strumien wyjsciowy, do ktorego maja zostac zapisane kolejne wspolrzedne. \\
+\hline
+\mbox{\tt in}  & {\em Pr} & -\/ klasa prostopadłościan. Z niej pobieramy kolejne współrzędne. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & -\/ gdy operacja zapisu powiodła się, \\
+\hline
+{\em false} & -\/ w przypadku przeciwnym. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 29 of file main.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a990d305723905580686036c1f971b881_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_a6483b771554ce5d0a5da9bd51ed3948d}\label{main_8cpp_a6483b771554ce5d0a5da9bd51ed3948d}} 
+\index{main.\+cpp@{main.\+cpp}!Przyklad\+Zapisu\+Wspolrzednych\+Do\+Strumienia@{Przyklad\+Zapisu\+Wspolrzednych\+Do\+Strumienia}}
+\index{Przyklad\+Zapisu\+Wspolrzednych\+Do\+Strumienia@{Przyklad\+Zapisu\+Wspolrzednych\+Do\+Strumienia}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Przyklad\+Zapisu\+Wspolrzednych\+Do\+Strumienia()}{PrzykladZapisuWspolrzednychDoStrumienia()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Przyklad\+Zapisu\+Wspolrzednych\+Do\+Strumienia (\begin{DoxyParamCaption}\item[{ostream \&}]{Strm\+Wy,  }\item[{\hyperlink{class_rotor}{Rotor} \&}]{R }\end{DoxyParamCaption})}
+
+
+
+Definition at line 36 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a0f857701aee11003ec83e8f78ce70042}\label{main_8cpp_a0f857701aee11003ec83e8f78ce70042}} 
+\index{main.\+cpp@{main.\+cpp}!Przyklad\+Zapisu\+Wspolrzednych\+Ze\+Strumienia@{Przyklad\+Zapisu\+Wspolrzednych\+Ze\+Strumienia}}
+\index{Przyklad\+Zapisu\+Wspolrzednych\+Ze\+Strumienia@{Przyklad\+Zapisu\+Wspolrzednych\+Ze\+Strumienia}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Przyklad\+Zapisu\+Wspolrzednych\+Ze\+Strumienia()}{PrzykladZapisuWspolrzednychZeStrumienia()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Przyklad\+Zapisu\+Wspolrzednych\+Ze\+Strumienia (\begin{DoxyParamCaption}\item[{istream \&}]{Strm\+We,  }\item[{\hyperlink{class_prostopadloscian}{Prostopadloscian} \&}]{Pr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 90 of file main.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a0f857701aee11003ec83e8f78ce70042_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_aa0d8fb117515f2705eabef48acc4c192}\label{main_8cpp_aa0d8fb117515f2705eabef48acc4c192}} 
+\index{main.\+cpp@{main.\+cpp}!Przyklad\+Zapisu\+Wspolrzednych\+Ze\+Strumienia@{Przyklad\+Zapisu\+Wspolrzednych\+Ze\+Strumienia}}
+\index{Przyklad\+Zapisu\+Wspolrzednych\+Ze\+Strumienia@{Przyklad\+Zapisu\+Wspolrzednych\+Ze\+Strumienia}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Przyklad\+Zapisu\+Wspolrzednych\+Ze\+Strumienia()}{PrzykladZapisuWspolrzednychZeStrumienia()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Przyklad\+Zapisu\+Wspolrzednych\+Ze\+Strumienia (\begin{DoxyParamCaption}\item[{istream \&}]{Strm\+We,  }\item[{\hyperlink{class_rotor}{Rotor} \&}]{R }\end{DoxyParamCaption})}
+
+
+
+Definition at line 99 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_ae081463cef84ed1c8249dd0856a617da}\label{main_8cpp_ae081463cef84ed1c8249dd0856a617da}} 
+\index{main.\+cpp@{main.\+cpp}!Przyklad\+Zapisu\+Wspolrzednychz\+Pliku@{Przyklad\+Zapisu\+Wspolrzednychz\+Pliku}}
+\index{Przyklad\+Zapisu\+Wspolrzednychz\+Pliku@{Przyklad\+Zapisu\+Wspolrzednychz\+Pliku}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Przyklad\+Zapisu\+Wspolrzednychz\+Pliku()}{PrzykladZapisuWspolrzednychzPliku()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Przyklad\+Zapisu\+Wspolrzednychz\+Pliku (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s\+Nazwa\+Pliku,  }\item[{\hyperlink{class_prostopadloscian}{Prostopadloscian} \&}]{Pr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 106 of file main.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_ae081463cef84ed1c8249dd0856a617da_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{main_8cpp_ae081463cef84ed1c8249dd0856a617da_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_a1abe78e04f1c060f682b5c8a65f9c880}\label{main_8cpp_a1abe78e04f1c060f682b5c8a65f9c880}} 
+\index{main.\+cpp@{main.\+cpp}!Przyklad\+Zapisu\+Wspolrzednychz\+Pliku@{Przyklad\+Zapisu\+Wspolrzednychz\+Pliku}}
+\index{Przyklad\+Zapisu\+Wspolrzednychz\+Pliku@{Przyklad\+Zapisu\+Wspolrzednychz\+Pliku}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Przyklad\+Zapisu\+Wspolrzednychz\+Pliku()}{PrzykladZapisuWspolrzednychzPliku()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Przyklad\+Zapisu\+Wspolrzednychz\+Pliku (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s\+Nazwa\+Pliku,  }\item[{\hyperlink{class_rotor}{Rotor} \&}]{R }\end{DoxyParamCaption})}
+
+
+
+Definition at line 124 of file main.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a1abe78e04f1c060f682b5c8a65f9c880_cgraph}
+\end{center}
+\end{figure}
