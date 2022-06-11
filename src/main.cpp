@@ -329,7 +329,6 @@ int main()
   double param_t;
   int RotAngle;
 
-
   if (!PrzykladZapisuWspolrzednychzPliku("Dron1/Korpus.dat",S[0]->Corpus1())) return 1;
   if (!PrzykladZapisuWspolrzednychzPliku("Dron1/Rotor1.dat",S[0]->Take(0))) return 1;
   if (!PrzykladZapisuWspolrzednychzPliku("Dron1/Rotor2.dat",S[0]->Take(1))) return 1;
